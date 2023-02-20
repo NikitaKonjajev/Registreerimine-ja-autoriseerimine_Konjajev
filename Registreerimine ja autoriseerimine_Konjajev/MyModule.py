@@ -1,5 +1,11 @@
 from random import *
 def kasutajaandmed(ll:list,p:list):
+    """siin toimub registreerimine
+    """
+    print("Kas sa tahad oma andmet või random")
+    a=input("Mida te soovite: ")
+    if a=="oma":
+        login=input("Kirjutage teie nimi: ")       
     print("Kas sa tahad oma andmet või random")
     a=input("Mida te soovite: ")
     if a=="oma":
@@ -29,11 +35,42 @@ def kasutajaandmed(ll:list,p:list):
     return login,psword
  
 def aut(ll:list,p:list):
+    """siin on autoriseerimine 
+    """
     print("Kirjutage teie login j salasõna")
     logg=input("Login: ")
     pas_=input("Salasõna: ")
     if logg in ll and pas_ in p:
         print("Tere tulemast!")
-    else:
+    else: 
         print("Ebaõiged andmed")
     return logg, pas_
+
+def uss_login(ll:list,vanamini:list,uusnimi:list):
+    """Siin saab oma nimi kustutada.
+    """
+    if vanamini in ll:
+        index=ll.index(vanamini)
+        ll[index]=uusnimi
+        print("Sinu nimi on muudetud.")
+    else:
+        print("Viga!")
+
+def uss_salasõna(ll,p,login,vanasalasõna,uussalasõna):
+    """Siin saab oma parooli kustutada.
+    """
+    if login in ll and vanasalasõna in p:
+        index=ll.index(login)
+        p[index]=uussalasõna
+        print("salasõna on muudetud")
+    else:
+        print("Viga!")
+        
+def nimii(ll,p,nimiii):
+    """Siin saab vaadata oma vana parooli.
+    """
+    if nimiii in ll:
+        index=ll.index(nimiii)
+        print(f"Teie vana salasõna on:",p[index])
+    else: 
+        print("Viga!")
