@@ -1,6 +1,20 @@
 from MyModule import *
-#Registreerimine ja autoriseerimine
+#dadada
+#10-Keskmine() - Среднюю зарплату и имя человека ее получающего
+palgad=[1200,2500,750,395,1200]
+inimesed=["A","B","C","D","E"]
+print(Keskmine(palgad,inimesed))
 
+
+
+
+
+
+
+
+
+
+#Registreerimine ja autoriseerimine
 ll=[]
 p=[]
 while True:
