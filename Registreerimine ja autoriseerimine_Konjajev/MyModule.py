@@ -1,4 +1,23 @@
 from random import *
+#praktiline töö
+
+def Keskmine(palgad,inimesed):
+    keskminee=sum(palgad)/len(palgad)
+    max_index=palgad.index(max(palgad))
+    nimi=inimesed[max_index]
+    return keskminee, nimi
+
+"""
+def keskmine(palgad,inimesed):
+    keskminee=sum(palgad)/len(palgad)
+    ind=palgad.index(keskminee)
+    nimi=inimesed[ind]  
+    return keskminee
+"""
+
+
+
+#Registreerimine ja autoriseerimine
 def kasutajaandmed(ll:list,p:list):
     """siin toimub registreerimine
     """
@@ -61,7 +80,7 @@ def uss_salasõna(ll,p,login,vanasalasõna,uussalasõna):
     """
     if login in ll and vanasalasõna in p:
         index=ll.index(login)
-        p[index]=uussalasõna
+        p[index]=uussalasõna       
         print("salasõna on muudetud")
     else:
         print("Viga!")
