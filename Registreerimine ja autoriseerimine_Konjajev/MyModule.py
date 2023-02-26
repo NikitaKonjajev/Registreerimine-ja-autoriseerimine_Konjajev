@@ -1,13 +1,13 @@
 from random import *
-#praktiline töö
+#1-Добавить еще несколько человек и зарплат(кол-во говорит пользователь),
 def uued_palgad(inimesed,palgad):
-    nimi=input("Введите имя человека: ")
-    palk=int(input("Введите зарплату: "))
+    nimi=input("Kirjuta nimi: ")
+    palk=int(input("Kirjuta palk: "))
     inimesed.append(palk)
     palgad.append(nimi)
     return inimesed, palgad
 
-#1-Добавить еще несколько человек и зарплат(кол-во говорит пользователь),
+#praktiline töö
 def Keskmine(palgad,inimesed):
     keskminee=sum(palgad)/len(palgad)
     max_index=palgad.index(max(palgad))
@@ -21,8 +21,6 @@ def keskmine(palgad,inimesed):
     nimi=inimesed[ind]  
     return keskminee
 """
-
-
 
 #Registreerimine ja autoriseerimine
 def kasutajaandmed(ll:list,p:list):
