@@ -1,18 +1,13 @@
 from MyModule import *
-#dadada
+#1-Добавить еще несколько человек и зарплат(кол-во говорит пользователь),
+palgad=[1200,2500,750,395,1200]
+inimesed=["A","B","C","D","E"]
+print(uued_palgad(palgad,inimesed))
+
 #10-Keskmine() - Среднюю зарплату и имя человека ее получающего
 palgad=[1200,2500,750,395,1200]
 inimesed=["A","B","C","D","E"]
 print(Keskmine(palgad,inimesed))
-
-
-
-
-
-
-
-
-
 
 #Registreerimine ja autoriseerimine
 ll=[]

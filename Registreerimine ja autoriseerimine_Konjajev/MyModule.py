@@ -1,6 +1,13 @@
 from random import *
 #praktiline töö
+def uued_palgad(inimesed,palgad):
+    nimi=input("Введите имя человека: ")
+    palk=int(input("Введите зарплату: "))
+    inimesed.append(palk)
+    palgad.append(nimi)
+    return inimesed, palgad
 
+#1-Добавить еще несколько человек и зарплат(кол-во говорит пользователь),
 def Keskmine(palgad,inimesed):
     keskminee=sum(palgad)/len(palgad)
     max_index=palgad.index(max(palgad))
