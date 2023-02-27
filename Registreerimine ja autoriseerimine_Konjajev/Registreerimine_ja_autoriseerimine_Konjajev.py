@@ -1,4 +1,8 @@
 from MyModule import *
+palgad=[1200,1200,1200,1200,1200]
+inimesed=["A","B","C","D","E"]
+print(Kustutamine(palgad,inimesed))
+
 #1-Добавить еще несколько человек и зарплат(кол-во говорит пользователь),
 palgad=[1200,2500,750,395,1200]
 inimesed=["A","B","C","D","E"]

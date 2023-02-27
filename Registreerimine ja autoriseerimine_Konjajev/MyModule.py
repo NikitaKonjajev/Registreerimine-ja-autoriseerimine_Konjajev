@@ -1,4 +1,42 @@
 from random import *
+
+def Soorteerimine(inimesed,palgad):
+    v=int(input("Palk 1-kahened,2-kasvad?"))
+    if v==1:
+        n=len(palgad) 
+        for j in range(0,n-1):
+            for k in range(j+1,n):
+                if palgad[j] < palgad[k]:
+                    abi = palgad[j]
+                    palgad[j] = palgad[k]
+                    palgad[k] = abi
+                    abi = inimesed[j]
+                    inimesed[j] = inimesed[k]
+                    inimesed[k] = abi
+    elif v == 2:
+            n = len(palgad)
+            for j in range(n - 1):
+                for k in range(j + 1, n):
+                    if palgad[j] > palgad[k]:
+                        abi = palgad[j]
+                        palgad[j] = palgad[k]
+                        palgad[k] = abi
+                        abi = inimesed[j]
+                        inimesed[j] = inimesed[k]
+                        inimesed[k] = abi  
+    print("Имена работников", inimesed)
+    print("Зарплаты работников:", palgad) 
+    
+def Kustutamine(palgad:list,inimesed:list):
+    nimi=input("sisesta nimi: ")
+    if nimi in inimesed:
+        n=inimesed.count(nimi)
+        for j in range(n):
+            ind=inimesed.index(nimi)
+            inimesed.pop(ind)
+            palgad.pop(ind)
+    return inimesed,palgad
+
 #1-Добавить еще несколько человек и зарплат(кол-во говорит пользователь),
 def uued_palgad(inimesed,palgad):
     nimi=input("Kirjuta nimi: ")
