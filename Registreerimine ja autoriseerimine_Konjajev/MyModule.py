@@ -3,14 +3,14 @@ from random import *
 def uued_palgad(inimesed,palgad):
     nimi=input("Kirjuta nimi: ")
     palk=int(input("Kirjuta palk: "))
-    inimesed.append(palk)
-    palgad.append(nimi)
+    palgad.append(palk)
+    inimesed.append(nimi)
     return inimesed, palgad
 
-#praktiline töö
+#praktiline töö 10
 def Keskmine(palgad,inimesed):
     keskminee=sum(palgad)/len(palgad)
-    max_index=palgad.index(max(palgad))
+    max_index=palgad.index(keskminee)
     nimi=inimesed[max_index]
     return keskminee, nimi
 
